@@ -1,11 +1,13 @@
+import Button from './components/Button/Button';
 
-import './App.css'
 function App() {
   return (
-    <h1 className="text-3xl font-bold underline">
-    Hello world!
-  </h1>
-  )
+    <div>
+      <Button variant="Primary" type="button">
+        button
+      </Button>
+    </div>
+  );
 }
 
-export default App
+export default App;
