@@ -1,5 +1,149 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
 @tailwind base;
 @tailwind components;
+<<<<<<< Updated upstream
 @tailwind utilities;
+=======
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+:before,
+:after {
+    text-decoration: inherit;
+    vertical-align: inherit;
+}
+html,
+body {
+    height: 100%;
+    max-width: 100%;
+    overflow-x: clip;
+}
+html,
+html:focus-within {
+    scroll-behavior: smooth;
+    text-size-adjust: none;
+    font-size: 100%;
+    cursor: default;
+    overflow-wrap: anywhere;
+    tab-size: 4;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+}
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-family: "Work Sans", sans-serif;
+    font-style: normal;
+    overscroll-behavior: contain;
+    font-synthesis: none;
+    font-optical-sizing: auto;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+@supports not (overflow: clip) {
+    html,
+    body {
+        overflow: hidden;
+    }
+}
+input,
+button,
+textarea,
+a,
+select {
+    font: inherit;
+    letter-spacing: inherit;
+    word-spacing: inherit;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    font-style: italic;
+    font-weight: bold;
+    background-repeat: no-repeat;
+    background-size: cover;
+    shape-margin: 0.75rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
+    box-shadow: none;
+    pointer-events: none;
+    isolation: isolate;
+}
+.button {
+    width: min-content;
+    height: min-content;
+    max-width: 100%;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    appearance: button;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+.button:not(:last-of-type) {
+    @apply mr-5;
+}
+.Container {
+    height: 100%;
+    width: var(--container-width, 90%);
+    margin-inline: auto;
+}
+#Hero h1 {
+    font-size: calc(2.6rem + 4vw);
+}
+@media screen and (min-width: 1600px) {
+    .Container {
+        --container-width: calc(1600px - 6rem);
+    }
+}
+@media screen and (max-width: 1600px) {
+    .Container {
+        --container-width: 90%;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .Container {
+        --container-width: calc(100% - 4rem);
+    }
+}
+@media screen and (max-width: 768px) {
+    .Container {
+        --container-width: calc(100% - 2rem);
+    }
+}
+/* For people who have motion sickness. */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    ::before,
+    ::after {
+        animation-delay: -1ms !important;
+        animation-duration: 1ms !important;
+        animation-iteration-count: 1 !important;
+        background-attachment: initial !important;
+        scroll-behavior: auto !important;
+        transition-delay: 0s !important;
+        transition-duration: 0s !important;
+    }
+}
+>>>>>>> Stashed changes
