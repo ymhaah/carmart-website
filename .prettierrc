@@ -1,25 +1,7 @@
 {
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-    "trailingComma": "es5",
-    "tabWidth": 2,
-    "semi": true,
-    "singleQuote": true
-  }
-  
-=======
   "plugins": ["prettier-plugin-tailwindcss"],
   "trailingComma": "es5",
   "tabWidth": 4,
   "semi": true,
   "singleQuote": false
 }
->>>>>>> Stashed changes
-=======
-  "plugins": ["prettier-plugin-tailwindcss"],
-  "trailingComma": "es5",
-  "tabWidth": 2,
-  "semi": true,
-  "singleQuote": true
-}
->>>>>>> 2507786cdfb2836aab8f96c454e73eff5b67f519

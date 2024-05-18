@@ -2,18 +2,11 @@
 
 @tailwind base;
 @tailwind components;
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-@tailwind utilities;
-=======
-=======
->>>>>>> 2507786cdfb2836aab8f96c454e73eff5b67f519
 @tailwind utilities;
 
 *,
 *::before,
 *::after {
-<<<<<<< HEAD
     box-sizing: border-box;
 }
 :before,
@@ -56,48 +49,12 @@ body {
     body {
         overflow: hidden;
     }
-=======
-  box-sizing: border-box;
-}
-html,
-body {
-  height: 100%;
-  max-width: 100%;
-  overflow-x: clip;
-  background-color: var(--bg-clr);
-}
-html,
-html:focus-within {
-  scroll-behavior: smooth;
-  -webkit-text-size-adjust: none;
-  -moz-text-size-adjust: none;
-  text-size-adjust: none;
-  font-size: 100%;
-}
-body {
-  position: relative;
-  margin: 0;
-  padding: 0;
-  overscroll-behavior: contain;
-  font-synthesis: none;
-  font-optical-sizing: auto;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-@supports not (overflow: clip) {
-  html,
-  body {
-    overflow: hidden;
-  }
->>>>>>> 2507786cdfb2836aab8f96c454e73eff5b67f519
 }
 input,
 button,
 textarea,
 a,
 select {
-<<<<<<< HEAD
     font: inherit;
     letter-spacing: inherit;
     word-spacing: inherit;
@@ -124,36 +81,6 @@ img {
 }
 .button {
     width: min-content;
-    height: min-content;
-=======
-  font: inherit;
-  letter-spacing: inherit;
-  word-spacing: inherit;
-}
-img,
-svg {
-  max-width: 100%;
-  height: auto;
-  vertical-align: middle;
-  font-style: italic;
-  font-weight: bold;
-  background-repeat: no-repeat;
-  background-size: cover;
-  shape-margin: 0.75rem;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
-  -o-object-fit: cover;
-  object-fit: cover;
-  -o-object-position: center;
-  object-position: center;
-  box-shadow: none;
-  pointer-events: none;
-  isolation: isolate;
-}
-.button {
-	  width: min-content;
->>>>>>> 2507786cdfb2836aab8f96c454e73eff5b67f519
     max-width: 100%;
     display: inline-flex;
     flex-direction: row;
@@ -164,7 +91,6 @@ svg {
     white-space: nowrap;
     overflow: hidden;
     appearance: button;
-<<<<<<< HEAD
     -webkit-appearance: button;
     -moz-appearance: button;
     user-select: none;
@@ -216,22 +142,3 @@ svg {
         transition-duration: 0s !important;
     }
 }
->>>>>>> Stashed changes
-=======
-	  user-select: none;
-}
-/* For people who have motion sickness. */
-@media (prefers-reduced-motion: reduce) {
-  *,
-  ::before,
-  ::after {
-    animation-delay: -1ms !important;
-    animation-duration: 1ms !important;
-    animation-iteration-count: 1 !important;
-    background-attachment: initial !important;
-    scroll-behavior: auto !important;
-    transition-delay: 0s !important;
-    transition-duration: 0s !important;
-  }
-}
->>>>>>> 2507786cdfb2836aab8f96c454e73eff5b67f519

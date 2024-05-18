@@ -1,6 +1,6 @@
 import { useRef, useState, useEffect } from "react";
 
-import Button from "./ui/Button";
+import Button from "@/Button";
 
 /**
  * Header component.
