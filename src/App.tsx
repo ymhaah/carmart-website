@@ -1,13 +1,13 @@
-import Button from './components/Button/Button';
+import Header from "@/Header.tsx";
+import Home from "./pages/home/Home.tsx";
 
 function App() {
-  return (
-    <div>
-      <Button variant="Primary" type="button">
-        button
-      </Button>
-    </div>
-  );
+    return (
+        <>
+            <Header />
+            <Home />
+        </>
+    );
 }
 
 export default App;
