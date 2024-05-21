@@ -8,7 +8,7 @@ import Button from "@/Button";
 function Hero(): JSX.Element {
     return (
         <main id="Hero" className="min-h-svh">
-            <div className="Container flex flex-col items-center justify-center py-40 text-center">
+            <div className="Container flex flex-col items-center justify-center py-40 text-center max-md:py-24">
                 <h1 className="mb-10 font-semibold leading-none tracking-tight text-txt-clr-800">
                     Buy modern <br className="max-md:hidden" />
                     cars easily

@@ -20,16 +20,16 @@ import sellYourCarWebp from "@img/featured_sell-your-car.webp";
  */
 function Features(): JSX.Element {
     return (
-        <section aria-labelledby="featured" className="mb-10">
+        <section aria-labelledby="featured" className="bg-bg-clr-500 pt-6">
             <div className="Container text-center">
                 <h2
                     id="featured"
-                    className="text-3xl font-semibold text-txt-clr-700 "
+                    className="mb-6 text-3xl font-semibold text-txt-clr-700"
                 >
                     Featured tools
                 </h2>
                 <div className="grid grid-cols-2  gap-4 max-md:grid-cols-1">
-                    <div className="flex flex-col items-center  justify-start gap-4 px-10 py-20 max-md:px-0">
+                    <div className="flex flex-col items-center justify-start gap-4  rounded bg-bg-clr-100 px-10 py-32 max-md:px-2 max-md:py-24">
                         <Image
                             src={findYourFit}
                             webpSrc={findYourFitWebp}
@@ -45,7 +45,7 @@ function Features(): JSX.Element {
                             to find what fits you best.
                         </p>
                     </div>
-                    <div className="flex flex-col items-center  justify-start gap-4 px-10 py-20 max-md:px-0">
+                    <div className="flex flex-col items-center justify-start gap-4  rounded bg-bg-clr-100 px-10 py-32 max-md:px-2 max-md:py-24">
                         <Image
                             src={shopByBudget}
                             webpSrc={shopByBudgetWebp}
@@ -61,7 +61,7 @@ function Features(): JSX.Element {
                             monthly payment and price point.
                         </p>
                     </div>
-                    <div className="flex flex-col items-center  justify-start gap-4 px-10 py-20 max-md:px-0">
+                    <div className="flex flex-col items-center justify-start gap-4  rounded bg-bg-clr-100 px-10 py-32 max-md:px-2 max-md:py-24">
                         <Image
                             src={buildAndPrice}
                             webpSrc={buildAndPriceWebp}
@@ -76,7 +76,7 @@ function Features(): JSX.Element {
                             Choose the make, model, trim, and options you want.
                         </p>
                     </div>
-                    <div className="flex flex-col items-center  justify-start gap-4 px-10 py-20 max-md:px-0">
+                    <div className="flex flex-col items-center justify-start gap-4  rounded bg-bg-clr-100 px-10 py-32 max-md:px-2 max-md:py-24">
                         <Image
                             src={sellYourCar}
                             webpSrc={sellYourCarWebp}

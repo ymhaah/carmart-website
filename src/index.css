@@ -114,11 +114,15 @@ img {
     width: var(--container-width, 90%);
     margin-inline: auto;
 }
+section[aria-labelledby="featured"] .Container {
+    --container-width: 75%;
+}
 #Hero h1 {
     font-size: calc(2.6rem + 4vw);
 }
 @media screen and (min-width: 1600px) {
-    .Container {
+    .Container,
+    section[aria-labelledby="featured"] .Container {
         --container-width: calc(1600px - 6rem);
     }
 }
@@ -128,12 +132,14 @@ img {
     }
 }
 @media screen and (max-width: 1024px) {
-    .Container {
+    .Container,
+    section[aria-labelledby="featured"] .Container {
         --container-width: calc(100% - 4rem);
     }
 }
 @media screen and (max-width: 768px) {
-    .Container {
+    .Container,
+    section[aria-labelledby="featured"] .Container {
         --container-width: calc(100% - 2rem);
     }
 }
