@@ -19,6 +19,7 @@ body {
     height: 100%;
     max-width: 100%;
     overflow-x: clip;
+    @apply bg-bg-clr-100;
 }
 html,
 html:focus-within {
@@ -59,14 +60,22 @@ select {
     letter-spacing: inherit;
     word-spacing: inherit;
 }
+picture {
+    width: max-content;
+    display: block;
+}
 img {
     max-width: 100%;
+    block-size: auto;
+    inline-size: auto;
+    max-inline-size: 100%;
     height: auto;
     vertical-align: middle;
     font-style: italic;
     font-weight: bold;
     background-repeat: no-repeat;
     background-size: cover;
+    border-style: none;
     shape-margin: 0.75rem;
     -webkit-user-select: none;
     -moz-user-select: none;

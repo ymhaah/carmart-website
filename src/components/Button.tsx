@@ -1,4 +1,4 @@
-import React from "react";
+import { ComponentProps } from "react";
 
 type BasePropsT<E extends React.ElementType> = {
     children: React.ReactNode;
@@ -10,7 +10,7 @@ type BasePropsT<E extends React.ElementType> = {
 };
 
 type ButtonPropsT<E extends React.ElementType> = BasePropsT<E> &
-    Omit<React.ComponentProps<E>, keyof BasePropsT<E>>;
+    Omit<ComponentProps<E>, keyof BasePropsT<E>>;
 
 /**
  * Button component.
@@ -47,7 +47,7 @@ function Button<E extends React.ElementType = "button">({
                     : variant === "Secondary"
                       ? `${isDisabled ? "border-txt-clr-600 text-txt-clr-700" : "border-txt-clr-600 text-txt-clr-800 hover:border-txt-clr-800"} bg-txt-clr-50 `
                       : variant === "Tertiary"
-                        ? `${isDisabled ? "text-txt-clr-600" : "bg-transparent text-txt-clr-900 hover:text-txt-clr-600"} border-none shadow-none`
+                        ? `${isDisabled ? "text-txt-clr-600" : "bg-bg-clr-100 text-txt-clr-900 hover:text-txt-clr-600"} border-none shadow-none`
                         : `${isDisabled || "opacity-90"} border-none bg-transparent text-txt-clr-900 shadow-none`
             } ${iconOnlyAlt ? "p-2" : "px-4 py-3"} ${isDisabled ? "cursor-not-allowed" : "focus:none pointer-events-auto cursor-pointer focus-visible:outline-none focus-visible:ring active:scale-90"} rounded border border-solid text-base font-normal leading-none no-underline shadow-md outline-none transition-all
     ${nativeAttributes.className || ""}`}
