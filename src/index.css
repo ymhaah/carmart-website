@@ -19,6 +19,7 @@ body {
     height: 100%;
     max-width: 100%;
     overflow-x: clip;
+    @apply bg-bg-clr-100;
 }
 html,
 html:focus-within {
@@ -59,14 +60,22 @@ select {
     letter-spacing: inherit;
     word-spacing: inherit;
 }
+picture {
+    width: max-content;
+    display: block;
+}
 img {
     max-width: 100%;
+    block-size: auto;
+    inline-size: auto;
+    max-inline-size: 100%;
     height: auto;
     vertical-align: middle;
     font-style: italic;
     font-weight: bold;
     background-repeat: no-repeat;
     background-size: cover;
+    border-style: none;
     shape-margin: 0.75rem;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -105,11 +114,15 @@ img {
     width: var(--container-width, 90%);
     margin-inline: auto;
 }
+section[aria-labelledby="featured"] .Container {
+    --container-width: 75%;
+}
 #Hero h1 {
     font-size: calc(2.6rem + 4vw);
 }
 @media screen and (min-width: 1600px) {
-    .Container {
+    .Container,
+    section[aria-labelledby="featured"] .Container {
         --container-width: calc(1600px - 6rem);
     }
 }
@@ -119,12 +132,14 @@ img {
     }
 }
 @media screen and (max-width: 1024px) {
-    .Container {
+    .Container,
+    section[aria-labelledby="featured"] .Container {
         --container-width: calc(100% - 4rem);
     }
 }
 @media screen and (max-width: 768px) {
-    .Container {
+    .Container,
+    section[aria-labelledby="featured"] .Container {
         --container-width: calc(100% - 2rem);
     }
 }
