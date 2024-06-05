@@ -29,7 +29,7 @@ function Features(): JSX.Element {
                     Featured tools
                 </h2>
                 <div className="grid grid-cols-2  gap-4 max-md:grid-cols-1">
-                    <div className="flex flex-col items-center justify-start gap-4  rounded bg-bg-clr-100 px-10 py-32 max-md:px-2 max-md:py-24">
+                    <div className="flex flex-col items-center justify-start gap-4  rounded bg-bg-clr-100 px-5 py-24 max-md:px-2 max-md:py-24">
                         <Image
                             src={findYourFit}
                             webpSrc={findYourFitWebp}
@@ -45,7 +45,7 @@ function Features(): JSX.Element {
                             to find what fits you best.
                         </p>
                     </div>
-                    <div className="flex flex-col items-center justify-start gap-4  rounded bg-bg-clr-100 px-10 py-32 max-md:px-2 max-md:py-24">
+                    <div className="flex flex-col items-center justify-start gap-4  rounded bg-bg-clr-100 px-5 py-24 max-md:px-2 max-md:py-24">
                         <Image
                             src={shopByBudget}
                             webpSrc={shopByBudgetWebp}
@@ -61,7 +61,7 @@ function Features(): JSX.Element {
                             monthly payment and price point.
                         </p>
                     </div>
-                    <div className="flex flex-col items-center justify-start gap-4  rounded bg-bg-clr-100 px-10 py-32 max-md:px-2 max-md:py-24">
+                    <div className="flex flex-col items-center justify-start gap-4  rounded bg-bg-clr-100 px-5 py-24 max-md:px-2 max-md:py-24">
                         <Image
                             src={buildAndPrice}
                             webpSrc={buildAndPriceWebp}
@@ -76,7 +76,7 @@ function Features(): JSX.Element {
                             Choose the make, model, trim, and options you want.
                         </p>
                     </div>
-                    <div className="flex flex-col items-center justify-start gap-4  rounded bg-bg-clr-100 px-10 py-32 max-md:px-2 max-md:py-24">
+                    <div className="flex flex-col items-center justify-start gap-4  rounded bg-bg-clr-100 px-5 py-24 max-md:px-2 max-md:py-24">
                         <Image
                             src={sellYourCar}
                             webpSrc={sellYourCarWebp}
