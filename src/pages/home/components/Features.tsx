@@ -20,8 +20,8 @@ import sellYourCarWebp from "@img/featured_sell-your-car.webp";
  */
 function Features(): JSX.Element {
     return (
-        <section aria-labelledby="featured" className="bg-bg-clr-500 pt-6">
-            <div className="Container text-center">
+        <section aria-labelledby="featured" className="pt-6">
+            <div className="fixed-container text-center">
                 <h2
                     id="featured"
                     className="mb-6 text-3xl font-semibold text-txt-clr-700"
