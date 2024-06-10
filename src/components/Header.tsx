@@ -57,7 +57,7 @@ function Header(): JSX.Element {
     }, [navOpenState]);
 
     return (
-        <header className="relative h-20 w-full py-0.5">
+        <header className="relative h-20 w-full bg-bg-clr-100 py-0.5">
             <div className="Container flex flex-row items-center justify-between gap-4">
                 <div>
                     <a href="#" className="block">
@@ -76,7 +76,6 @@ function Header(): JSX.Element {
                 <div>
                     <Button
                         iconOnlyAlt="Menu Toggle"
-                        type="button"
                         aria-controls="main-navigation-list"
                         aria-expanded={navOpenState === "opened"}
                         handleClick={toggleNav}

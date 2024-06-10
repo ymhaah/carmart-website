@@ -21,7 +21,7 @@ function Benefits(): JSX.Element {
                     Why Carmart?
                 </h2>
                 <div className="flex w-full flex-row justify-center gap-28 py-10 max-lg:gap-20 max-md:flex-col">
-                    <div className="flex  flex-col items-center justify-start gap-4">
+                    <div className="flex flex-col items-center justify-start gap-4">
                         <img
                             src={transparentPricing}
                             alt=""
