@@ -18,8 +18,8 @@ import convertibles from "@img/convertibles.jpg";
 import Button from "@/Button";
 
 /**
- * A React component that displays a slider of top-rated cars by type.
- * @returns {JSX.Element} The Cars component.
+ * cars component that displays a slider of top-rated cars by type.
+ * @returns {JSX.Element} The Cars top-rated component.
  */
 function Cars(): JSX.Element {
     const cars = [
@@ -49,9 +49,6 @@ function Cars(): JSX.Element {
         }
     }
 
-    /**
-     * Handles the next button click event to slide right.
-     */
     function handleNext(): void {
         if (slider.current && container.current) {
             const itemWidth =

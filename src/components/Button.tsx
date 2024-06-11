@@ -18,7 +18,6 @@ type ButtonPropsT<E extends React.ElementType> = BasePropsT<E> &
  * Button component.
  * Renders a 'button' or 'a' (anchor) element.
  * @param {ButtonPropsT} props - Component props.
- *    - children: The content to be displayed inside the button.
  *    - variant: The visual style variant of the button. Options are 'Primary', 'Secondary', or 'Tertiary'.
  *    - isDisabled: Indicates whether the button is disabled. Default is false.
  *    - iconOnlyAlt: Alternative text for the button icon, used for accessibility when only an icon is displayed.
@@ -41,16 +40,15 @@ function Button<E extends React.ElementType = "button">({
         ${iconOnlyAlt ? "p-2" : "px-4 py-3"} 
         ${isDisabled ? "cursor-not-allowed" : "focus:none pointer-events-auto cursor-pointer focus-visible:outline-none focus-visible:ring active:scale-90"}
         rounded border border-solid text-base font-normal leading-none no-underline shadow-md outline-none transition-all`,
-        `
-    ${
-        variant === "Primary"
-            ? `${isDisabled ? "border-primary-clr-200 bg-primary-clr-200" : "border-primary-clr-500 bg-primary-clr-500 hover:border-primary-clr-400 hover:bg-primary-clr-400"} text-bg-clr-500`
-            : variant === "Secondary"
-              ? `${isDisabled ? "border-txt-clr-600 text-txt-clr-700" : "border-txt-clr-600 text-txt-clr-800 hover:border-txt-clr-800"} bg-txt-clr-50 `
-              : variant === "Tertiary"
-                ? `${isDisabled ? "text-txt-clr-600" : "bg-bg-clr-100 text-txt-clr-900 hover:text-txt-clr-600"} border-none shadow-none`
-                : `${isDisabled || "opacity-90"} border-none bg-transparent text-txt-clr-900 shadow-none`
-    }
+        `${
+            variant === "Primary"
+                ? `${isDisabled ? "border-primary-clr-200 bg-primary-clr-200" : "border-primary-clr-500 bg-primary-clr-500 hover:border-primary-clr-400 hover:bg-primary-clr-400"} text-bg-clr-500`
+                : variant === "Secondary"
+                  ? `${isDisabled ? "border-txt-clr-600 text-txt-clr-700" : "border-txt-clr-600 text-txt-clr-800 hover:border-txt-clr-800"} bg-txt-clr-50 `
+                  : variant === "Tertiary"
+                    ? `${isDisabled ? "text-txt-clr-600" : "bg-bg-clr-100 text-txt-clr-900 hover:text-txt-clr-600"} border-none shadow-none`
+                    : `${isDisabled || "opacity-90"} border-none bg-transparent text-txt-clr-900 shadow-none`
+        }
     `
     );
 

@@ -8,6 +8,14 @@ import Button from "@/Button";
  * @returns {JSX.Element} - Rendered header component.
  */
 function Header(): JSX.Element {
+    const navLinks = [
+        { name: "Home", href: "#" },
+        { name: "Sell", href: "#" },
+        { name: "Buy", href: "#" },
+        { name: "Blog", href: "#" },
+        { name: "Faq", href: "#" },
+    ];
+
     const nav = useRef<HTMLDivElement>(null);
 
     const [navOpenState, setNavOpenState] = useState<
@@ -67,9 +75,6 @@ function Header(): JSX.Element {
                             alt="Carmart logo"
                             loading="eager"
                         />
-                        <span className="sr-only" aria-hidden="true">
-                            Carmart logo
-                        </span>
                     </a>
                 </div>
 
@@ -131,54 +136,17 @@ function Header(): JSX.Element {
                             id="main-navigation-list"
                             className="flex size-full content-center justify-start gap-8 max-md:flex-col max-md:items-center max-md:justify-between"
                         >
-                            <li className="">
-                                <a
-                                    href="#"
-                                    target="_blank"
-                                    className="text-nowrap hover:underline hover:opacity-90"
-                                >
-                                    Home
-                                </a>
-                            </li>
-                            <li className="">
-                                <a
-                                    href="#"
-                                    type="button"
-                                    className="text-nowrap hover:underline hover:opacity-90"
-                                >
-                                    Sell
-                                </a>
-                            </li>
-                            <li className="">
-                                <a
-                                    href="#"
-                                    type="button"
-                                    target="_blank"
-                                    className="text-nowrap hover:underline hover:opacity-90"
-                                >
-                                    Buy
-                                </a>
-                            </li>
-                            <li className="">
-                                <a
-                                    href="#"
-                                    type="button"
-                                    target="_blank"
-                                    className="text-nowrap hover:underline hover:opacity-90"
-                                >
-                                    Blog
-                                </a>
-                            </li>
-                            <li className="">
-                                <a
-                                    href="#"
-                                    type="button"
-                                    target="_blank"
-                                    className="text-nowrap hover:underline hover:opacity-90"
-                                >
-                                    Faq
-                                </a>
-                            </li>
+                            {navLinks.map((link, index) => (
+                                <li key={index}>
+                                    <a
+                                        href={link.href}
+                                        target="_blank"
+                                        className="text-nowrap hover:underline hover:opacity-90"
+                                    >
+                                        {link.name}
+                                    </a>
+                                </li>
+                            ))}
                             <li className="max-md:w-full md:hidden">
                                 <Button
                                     variant="Tertiary"
