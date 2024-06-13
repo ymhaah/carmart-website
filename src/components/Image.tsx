@@ -14,7 +14,6 @@ type ImagePropsT = BasePropsT &
  * @param {ImagePropsT} props - Image props.
  * - src: Source URL for the image.
  * - webpSrc: Optional source URL for the WebP image.
- * - alt: Alternative text for the image.
  * @returns {JSX.Element} The picture element containing the image sources.
  */
 function Image({

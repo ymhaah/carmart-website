@@ -5,6 +5,7 @@ import north_east from "@icon/north_east.svg";
  * @returns {JSX.Element} The rendered footer component.
  */
 function Footer(): JSX.Element {
+    // ? each object in footerLinks array is a column the footer that contains a title and links
     const footerLinks = [
         {
             title: "Buyers",
@@ -61,7 +62,7 @@ function Footer(): JSX.Element {
     ];
 
     return (
-        <footer className="">
+        <footer>
             <div className="Container flex w-full flex-row justify-between gap-10 py-12 max-md:flex-col">
                 {footerLinks.map((item, index) => (
                     <div

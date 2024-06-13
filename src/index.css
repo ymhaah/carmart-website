@@ -93,6 +93,7 @@ img {
     height: fit-content;
     max-width: 100%;
     display: inline-flex;
+    flex: 0 1 auto;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -106,6 +107,12 @@ img {
     user-select: none;
     -webkit-user-select: none;
     -moz-user-select: none;
+}
+@supports not (width: fit-content) {
+    .button {
+        width: max-content;
+        height: max-content;
+    }
 }
 :where(.button:not(:last-of-type)) {
     @apply mr-5;

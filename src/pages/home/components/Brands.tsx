@@ -49,7 +49,7 @@ function Brands(): JSX.Element {
     }
 
     return (
-        <section aria-labelledby="Brands" className="">
+        <section aria-labelledby="Brands">
             <div className="fixed-container overflow-hidden bg-bg-clr-100 pb-40 pt-10 text-center">
                 <h2
                     id="Brands"
